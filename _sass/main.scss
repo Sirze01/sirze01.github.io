@@ -1,1 +1,74 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sarala:wght@400;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+$primary-font: Asap, 'Signika Negative', Sarala, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+$secondary-font: 'Alegreya Sans', Alegreya, Nobile, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Martel:wght@200;300;400;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+$tertiary-font: 'Ek Mukta', 'Hind Siliguri', Martel, sans-serif;
+
+$background-color-light: #A7BED3;
+$background-color-dark: #273043;
+
+$primary-color-light: #F7A072;
+$primary-color-dark: #FF8600;
+
+$accent-color: #9AE19D;
+
+body {
+    margin: 0;
+
+    font-family: $tertiary-font;
+    background-color: $background-color-light;
+}
+
+h1 {
+    font-family: $primary-font;
+    font-size: 1.5rem;
+}
+
+h2, h3, h4 {
+    font-family: $secondary-font;
+}
+
+.title-name {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    font-size: 1.7rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: stretch;
+}
+
+.column {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: $primary-color-light;
+}
+
+.column-content {
+    margin: 1rem;
+    margin-top: 0;
+}
+
+#col-lt {
+    flex: 1;
+}
+
+#col-lt img {
+    width: 75%;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+#col-rt {
+    flex: 2;
+}

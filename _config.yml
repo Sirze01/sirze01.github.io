@@ -21,7 +21,7 @@
 title: José Costa's personal website
 email: sirze@live.com.pt
 tagline: Get to know a little bit of me and what I do
-description: This is my personal website. Here you can learn about what I do, what I like and what I spend my time on. Browse through the site to learn more about my projects, adventures and past experiences.
+description: Welcome to my website. Here you can learn about what I do, what I like and what I spend my time on. Browse through the site to learn more about my projects, adventures and past experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: "sirze01.github.io"
 url: "https://sirze01.github.io" # the base hostname & protocol for your site, e.g. http://example.com

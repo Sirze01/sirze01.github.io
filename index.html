@@ -2,16 +2,86 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>José Costa | Home</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     {% feed_meta %}
     {% seo %}
 </head>
-<body>
-    <h1>José Costa</h1>
-    
-</body>
-</html>
 
+<body>
+    <div>
+
+        <h1 class="title-name">José Costa</h1>
+
+        <div class="container">
+            <div id="col-lt" class="column">
+                <img alt="A photo of me (José Costa)" src="/assets/images/781296350762609766a9f8f9a13d3f74.jpg">
+                <div class="column-content">
+                    <h1>Hello, I'm José.</h1>
+                    <!--If changing this paragraph change the config file description also-->
+                    <p>Welcome to my website. Here you can learn about what I do, what I like and what I spend my time
+                        on.
+                        Browse through the site to learn more about my projects, adventures and past experiences. I love
+                        cars, computers and fixing things.
+                    </p>
+                    <p>
+                        I'm currently taking a <a
+                            href="https://sigarra.up.pt/feup/en/cur_geral.cur_view?pv_curso_id=22862&pv_ano_lectivo=2022">Master
+                            degree in
+                            Informatics and Computing Engineering</a>. Check it out.</p>
+
+                    <div class="read-more"><a href="/about_me/">Learn more about me</a></div>
+                </div>
+            </div>
+            <div id="col-rt" class="column">
+                <div class="column-content">
+                    <h1>What I'm up to</h1>
+                    <div class="column-content">
+                        <h2>Projects</h2>
+                        <p>If you're curious about my previous projects feel free to explore and learn about them.</p>
+                        <h3 class="recent">Recent projects:</h3>
+                        <!--Add some cards with project image-->
+                        <div>
+                            <ul>
+                                {% for post in site.posts %}
+                                {% if post.category == "projects" %}
+                                <li>
+                                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="read-more">More projects</div>
+                    </div>
+                    <div class="column-content">
+                        <h2>Adventure blog</h2>
+                        <p>Posts about my everyday endeavours. Know my thoughts about random subjects as well as what
+                            I'm learning and experimenting with at the moment.</p>
+                        <h3 class="recent">Recent posts:</h3>
+                        <!--Add some post listings image-->
+                        <div>
+                            <ul>
+                                {% for post in site.posts %}
+                                {% if post.category == "adventures" %}
+                                <li>
+                                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="read-more">More posts</div>
+                    </div>
+                </div>
+                <div class="column-content">
+                    <h1>My socials</h1>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
